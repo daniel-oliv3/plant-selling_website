@@ -110,12 +110,31 @@ html {
   color: yellow;
 }
 
+.header-3 .navbar a {
+  color: #666;
+  font-size: 2rem;
+  margin-right: 2rem;
+}
 
+.header-3 .icons a {
+  color: #666;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+}
 
+.header-3 a:hover {
+  color: var(--green);
+}
 
-
-
-
+#menu-bar {
+  font-size: 3rem;
+  color: #666;
+  border: .1rem solid #666;
+  border-radius: .5rem;
+  padding: .5rem 1.5rem;
+  cursor: pointer;
+  display: none;
+}
 
 
 
@@ -129,14 +148,59 @@ html {
 
 
 /* ======= Responsive/Responsividade ======= */
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
   html {
     font-size: 55%;
   }
 }
+
+@media (max-width: 991px) {
+  
+  .header-1,
+  .header-2,
+  .header-3 {
+    padding: 2rem;  
+  }
+  
+}
+
+@media (max-width: 768px) {
+  #menu-bar {
+    display: initial;
+  }
+
+  .header-3 .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #eee;
+    padding: 1rem 2rem;
+    border-top: .1rem solid rgba(0, 0, 0, .3);
+  }
+
+  .header-3 .navbar a {
+    display: block;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    background: #fff;
+    text-align: center;
+  }
+
+  .header-2 {
+    flex-flow: column;
+  }
+
+  .header-2 .search-bar-container {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+
 @media (max-width: 450px) {
   html {
     font-size: 50%;
   }
 }
-
