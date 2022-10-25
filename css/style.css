@@ -27,6 +27,9 @@ html {
   scroll-padding-top: 7rem;
 }
 
+body {
+  height: 200rem;
+}
 
 /* ======= Header Section/Seção de Cabeçalho ======= */
 .header-1,
@@ -136,7 +139,12 @@ html {
   display: none;
 }
 
-
+.header-3.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 
 
 
