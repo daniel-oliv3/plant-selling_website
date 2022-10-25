@@ -5,12 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Venda de plantas</title>
+	<!-- Swiper Js CDN Link -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"> 	
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="shortcut icon" href="img/favicon.ico"/>
 	<!-- Font-Awesome CDN Link -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-	<!-- Swiper Js CDN Link-->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">	
 </head>
 <body>
 
@@ -62,9 +62,9 @@
 
 <!-- ======= Home Section/Seção inicial ======= -->
 <section class="home" id="home">
-	<div class="home-slide">
-		<div class="wrapper">
-			<div class="slide">
+	<div class="swiper-container home-slider">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
 				<div class="box" style="background: url(img/slider1.jpg);">
 					<div class="content">
 						<span>Até 75% de desconto</span>
@@ -73,7 +73,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="slide">
+			<div class="swiper-slide">
 				<div class="box" style="background: url(img/slider2.jpg);">
 					<div class="content">
 						<span>Até 25% de desconto</span>
@@ -82,7 +82,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="slide">
+			<div class="swiper-slide">
 				<div class="box" style="background: url(img/slider3.jpg);">
 					<div class="content">
 						<span>Até 45% de desconto</span>
@@ -92,6 +92,7 @@
 				</div>
 			</div>
 		</div>
+		<div class="swiper-pagination"></div>
 	</div>
 </section>
 
@@ -99,10 +100,10 @@
 
 
 
-
-
-	
+	<!-- Swiper Js CDN Link -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>	
 	<script src="js/script.js"></script>
+	
 </body>
 </html>
 
