@@ -66,12 +66,49 @@ html {
   color: yellow;
 }
 
+.header-2 .logo {
+  font-weight: bolder;
+  font-size: 3rem;
+  color: #fff;
+}
 
 
+.header-2 .logo i {
+  color: yellow;
+}
 
+.header-2 .search-bar-container {
+  display: flex;
+  align-items: center;
+  width: 50rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: .5rem;
+}
 
+.header-2 .search-bar-container #search-bar {
+  width: 100%;
+  background: none;
+  text-transform: none;
+  color: #fff;
+  font-size: 1.7rem;
+}
 
+.header-2 .search-bar-container #search-bar::placeholder {
+  text-transform: capitalize;
+  color: #fff;
+}
 
+.header-2 .search-bar-container label {
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 0 .5rem;
+}
+
+.header-2 .search-bar-container label:hover {
+  color: yellow;
+}
 
 
 
