@@ -43,11 +43,28 @@ html {
   border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
 }
 
+.header-3 {
+  background: #fff;
+  position: relative;
+  z-index: 10000;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
 
+.header-1 span {
+  font-weight: lighter;
+  color: #fff;
+  font-size: 1.7rem;
+}
 
+.header-1 a {
+  padding: 0 .7rem;
+  color: #fff;
+  font-size: 2rem;
+}
 
-
-
+.header-1 a:hover {
+  color: yellow;
+}
 
 
 
