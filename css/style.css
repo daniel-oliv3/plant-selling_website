@@ -177,6 +177,11 @@ html {
     background: #eee;
     padding: 1rem 2rem;
     border-top: .1rem solid rgba(0, 0, 0, .3);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header-3 .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 
   .header-3 .navbar a {
@@ -202,5 +207,9 @@ html {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+
+  .header-1 {
+    display: none;
   }
 }
