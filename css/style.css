@@ -200,16 +200,44 @@ html {
 }
 
 
+/* ======= Banner Section/Seção de banner ======= */
+.banner-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
 
+.banner-container .banner {
+  flex: 1 1 40rem;
+  height: 25rem;
+  border: .1rem solid rgba(0, 0, 0, .3);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  overflow: hidden;
+  position: relative;
+}
 
+.banner-container .banner .content {
+  position: absolute;
+  top: 50%;
+  left: 4%;
+  transform: translateY(-50%);
+}
 
+.banner-container .banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
+.banner-container .banner .content span {
+  color: #666;
+  font-size: 1.7rem;
+}
 
-
-
-
-
-
+.banner-container .banner .content h3 {
+  color: #333;
+  font-size: 3rem;
+}
 
 
 
