@@ -239,9 +239,12 @@ html {
   font-size: 3rem;
 }
 
+.banner-container .banner:hover img {
+  transform: scale(1.2);
+}
 
 
-
+/* ======= Category Section/Seção de categorias ======= */
 
 
 
@@ -268,6 +271,10 @@ html {
     padding: 2rem;  
   }
   
+  section {
+    padding: 1.5rem;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -307,6 +314,27 @@ html {
   .header-2 .search-bar-container {
     width: 100%;
     margin-top: 2rem;
+  }
+
+  .home .home-slider .box {
+    background-position: right !important;
+    z-index: 0;
+    padding-right: 5rem;
+  }
+
+  .home .home-slider .box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: rgba(255, 255, 255, .7);
+  }
+
+  .home .home-slider .box .content h3 {
+    font-size: 4rem;
   }
 }
 
